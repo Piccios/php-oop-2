@@ -1,8 +1,8 @@
 <?php
 
-require_once __DIR__ . '/ProductType.php';
+require_once __DIR__ . '/Products.php';
 
-class Toys extends ProductType{
+class Toys extends Products{
     private $Imgurl;
 
 
