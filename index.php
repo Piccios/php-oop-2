@@ -1,3 +1,16 @@
+<?php
+require_once __DIR__ . '/src/classes/Accessorise.php';
+require_once __DIR__ . './src/classes/Birds.php';
+require_once __DIR__ . './src/classes/Cat.php';
+require_once __DIR__ . './src/classes/Dog.php';
+require_once __DIR__ . './src/classes/Fishes.php';
+require_once __DIR__ . './src/classes/Food.php';
+require_once __DIR__ . './src/classes/Toys.php';
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
