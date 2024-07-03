@@ -1,11 +1,10 @@
 <?php
-require_once __DIR__ . '/src/classes/Accessorise.php';
-require_once __DIR__ . './src/classes/Birds.php';
-require_once __DIR__ . './src/classes/Cat.php';
-require_once __DIR__ . './src/classes/Dog.php';
-require_once __DIR__ . './src/classes/Fishes.php';
-require_once __DIR__ . './src/classes/Food.php';
-require_once __DIR__ . './src/classes/Toys.php';
+require_once __DIR__ . '/classes/Accessorise.php';
+require_once __DIR__ . '/classes/Food.php';
+require_once __DIR__ . '/classes/Species.php';
+require_once __DIR__ . '/classes/Toys.php';
+require_once __DIR__ . '/classes/products.php';
+
 
 ?>
 
