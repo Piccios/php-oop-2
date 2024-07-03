@@ -6,9 +6,10 @@ class Food extends Products {
     private $material;
     private $imgUrl;
 
-    public function __construct ($name, $species, $price, $imgUrl ) {
-    parent::__construct($name,  $price, $species, $imgUrl );
+    public function __construct ($name, $species, $price, $material, $imgUrl ) {
+    parent::__construct($name, $price, $species, $material,  $imgUrl );
     $this->imgUrl = $imgUrl;
+    $this->material = $material;
     }
 
 
