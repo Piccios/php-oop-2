@@ -1,5 +1,7 @@
 <?php
 
+
+
 class Products {
     private $name;
     private $price;
@@ -20,7 +22,6 @@ class Products {
         return $this->price;
     }
 
-
     public function getSpecies() {
         return $this->species;
     }
@@ -33,7 +34,9 @@ class Products {
         $this->price = $price;
     }
 
-    public function species($species) {
+    public function setSpecies($species) {
         $this->species = $species;
     }
+
+
 }

@@ -33,7 +33,7 @@ $products = [
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>php-oop-2</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
@@ -41,21 +41,24 @@ $products = [
         <h1>OOP Shop</h1>
     </header>
     <main>
-        <section class="container">
+        <section class="container d-flex justify-content-center flex-direction-row">
             <div class="row">
                 <?php
                 foreach ($products as $product) { ?>
-                    <div class="col-3">
-                        <div class="card m-5" style="width: 18rem;">
-                            <img src="<?php echo $product->getImgUrl() ?>" class="card-img-top" alt="">
+                    <div class="col-4">
+                        <div class="card m-5" style="width: 18rem; height: 35rem;">
+                            <img src="<?php echo $product->getImgUrl() ?>" class="card-img-top p-5" alt="<?php echo $product->getName() ?>">
                             <div class="card-body">
                                 <h5 class="card-title"><?php echo $product->getName() ?></h5>
-                                <p class="card-text"> Price: <?php echo $product->getPrice() ?></p>
-                                <a href="#" class="btn btn-primary">Add to cart</a>
+                                <p class="card-text"> Price: <?php echo $product->getPrice() ?> &euro;</p>
+                                <p class="card-text"><?php echo $product->getSpecies() ?></p>
+                                
                             </div>
+                            <a href="#" class="btn btn-primary w-3">Add to cart </a>
                         </div>
-                    <?php } ?>
                     </div>
+                <?php } ?>
+            </div>
             </div>
         </section>
     </main>

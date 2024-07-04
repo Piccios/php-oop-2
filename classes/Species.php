@@ -20,4 +20,8 @@ class Species
     public function setSpecies($species) {
         $this->species = $species;
     }
+
+    public function __toString() {
+        return $this->species;
+    }
 }
